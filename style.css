@@ -1,0 +1,187 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:#cfcfcf;
+line-height:1.6;
+}
+
+/* CONTAINER PADRÃO */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+/* HEADER */
+
+.hero{
+padding:40px 80px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.logo{
+width:250px;
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero-text h1{
+font-size:56px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+color:#bcbcbc;
+margin-bottom:30px;
+}
+
+.btn-whatsapp{
+background:linear-gradient(45deg,#ff2fb3,#7a3cff);
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.hero-image{
+width:500px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-image img{
+width:100%;
+animation:flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+
+0%{transform:translateY(0px)}
+50%{transform:translateY(-15px)}
+100%{transform:translateY(0px)}
+
+}
+/* SEÇÃO SERVIÇOS */
+
+.servicos{
+padding:80px 20px;
+text-align:center;
+}
+
+.servicos h2{
+font-size:34px;
+margin-bottom:50px;
+color:white;
+}
+
+/* GRID DE CARDS */
+
+.cards{
+display:flex;
+justify-content:center;
+align-items:stretch;
+gap:30px;
+flex-wrap:wrap;
+}
+
+/* CARD */
+
+.card{
+background:#111;
+width:300px;
+padding:35px;
+border-radius:12px;
+border:1px solid #222;
+transition:all 0.3s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#ff2fb3;
+box-shadow:0 10px 30px rgba(255,47,179,0.2);
+}
+
+.card h3{
+color:#ff2fb3;
+margin-bottom:15px;
+font-size:20px;
+}
+
+.card p{
+color:#bbb;
+margin-bottom:25px;
+font-size:15px;
+}
+
+/* BOTÃO WHATSAPP */
+
+.card button{
+background:linear-gradient(45deg,#ff2fb3,#7a3cff);
+border:none;
+padding:12px 22px;
+color:white;
+font-size:15px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.card button:hover{
+background:#4d27b4;
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:60px;
+border-top:1px solid #222;
+font-size:14px;
+color:#888;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.logo{
+width:180px;
+}
+
+.servicos h2{
+font-size:28px;
+}
+
+}
